@@ -1,0 +1,15 @@
+[package]
+name = "passwd-api"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [ "logos" , "utils"]
+
+[dependencies]
+actix-web = { version = "4.3.1" }
+serde = "*"
+env_logger = "*"
+log = "*"
+
+logos = { path = "logos" }

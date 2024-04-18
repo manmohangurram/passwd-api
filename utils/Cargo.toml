@@ -1,0 +1,16 @@
+[package]
+name = "utils"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+uuid = { version = "1.7.0", features = ["serde", "v4", "v7", "fast-rng"] }
+derive_more = { version = "*" }
+actix-web = "4.3.1"
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+validator = { version = "*"}
+log = "*"
+base64 = "*"

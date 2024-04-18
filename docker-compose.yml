@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+    api:
+      user: root:root
+      build: .
+      image: executable_builder:latest
+      volumes:
+        - /home/mohan/Documents/passwd-api/:/passwd-api
+      working_dir: /
+      command: sh /passwd/publisher.sh
+      networks:
+        - backend
+
+networks:
+  backend:
+    external:
+      name: backend
